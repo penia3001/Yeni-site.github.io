@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerCharm - İç Giyimde Zarafet ve Şıklık</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background-image: url('https://i.hizliresim.com/sualfls.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .category h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom {
+            background-color: #ff6347;
+            color: white;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #e5533d;
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .card {
+            border-radius: 25px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-light py-3 shadow-sm">
+        <div class="container text-center">
+            <img src="https://i.hizliresim.com/7k5dkyb.JPG" alt="InnerCharm Logo" class="img-fluid mx-auto d-block" style="width: 300px;">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#new-arrivals">Yeni Gelenler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#featured">Öne Çıkanlar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonials">Yorumlar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>REYON SAYFASINA HOŞGELDİNİZ</h1>
+            <p>InnerCharm ile iç giyimde zarafet ve şıklığı keşfedin. En sevdiğiniz ürünleri keşfetmeye başlayın!</p>
+            <a href="#new-arrivals" class="btn btn-primary btn-lg">Hemen Alışverişe Başla</a>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section id="new-arrivals" class="category py-5">
+                <h2>Yeni Gelenler</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/pmy4dfw.jpg" alt="Dantelli Siyah Külot" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dantelli Siyah Külot</h5>
+                                <p>$98.00</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/skq9b32.jpg" alt="Dantelli Beyaz Sütyen" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dantelli Beyaz Sütyen</h5>
+                                <p>$98.00</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/ryjpt1x.jpeg" alt="Dantelli Kırmızı Takım" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dantelli Kırmızı Takım</h5>
+                                <p>$98.00</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured" class="category py-5">
+                <h2>Öne Çıkanlar</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/pmy4dfw.jpg" alt="Dantelli Siyah Külot" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dantelli Siyah Külot</h5>
+                                <p>$98.00</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/skq9b32.jpg" alt="Dantelli Beyaz Sütyen" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Dantelli Beyaz Sütyen</h5>
+                                <p>$98.00</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/g4srr9h.jpg" alt="Çikolatalı İç Çamaşırı" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Çikolatalı İç Çamaşırı</h5>
+                                <p>$98.00</p>
+                                <a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/96i0y6s.jpg" alt="Karadut'lu İç Çamaşırı" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Karadut'lu İç Çamaşırı</h5>
+                                <p>$98.00</p><a href="http://localhost:8158/Payment.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                      <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://i.hizliresim.com/5rxmslc.jpg" alt="Bal'lı İç Çamaşırı" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Bal'lı İç Çamaşırı</h5>
+                                <p>$98.00</p><a href="http://localhost:8158/uyu.html" class="btn btn-custom">Satın Al</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="category py-5">
+                <h2>Yorumlar</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://via.placeholder.com/100" alt="Kullanıcı 1" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Kullanıcı 1</h5>
+                                <p class="card-text">Ürünler harika! Çok memnun kaldım.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://via.placeholder.com/100" alt="Kullanıcı 2" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Kullanıcı 2</h5>
+                                <p class="card-text">Kalite ve tasarım mükemmel. Herkese tavsiye ederim.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 text-center">
+                            <img src="https://via.placeholder.com/100" alt="Kullanıcı 3" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Kullanıcı 3</h5>
+                                <p class="card-text">Hızlı teslimat ve kaliteli ürünler. Tekrar alışveriş yapacağım.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="category py-5">
+                <h2>İletişim</h2>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <form id="contact-form" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="first_name" class="form-label">İsim</label>
+                                <input type="text" class="form-control" id="first_name" required>
+                                <div class="invalid-feedback">Lütfen isminizi girin.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="last_name" class="form-label">Soyisim</label>
+                                <input type="text" class="form-control" id="last_name" required>
+                                <div class="invalid-feedback">Lütfen soyisminizi girin.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Lütfen geçerli bir email adresi girin.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mesaj</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Lütfen mesajınızı girin.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 InnerCharm - Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+        })();
+    </script>
+</body>
+</html>
